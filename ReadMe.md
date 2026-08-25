@@ -60,6 +60,15 @@ CMD
 ENTRYPOINT  
 EXPOSE  
 
+## Dockerfile tutorial
+
+Create a Dockerfile: S2/D-1/Dockerfile  
+
+Build the image from this docker file using command:  
+```
+docker build -r img_from .
+```
+
 
 
 
