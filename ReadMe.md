@@ -90,7 +90,19 @@ Bring the cotainer forward:
 docker exec -it cont_run-env bash
 ```
 
+### Tutorial 3
 
+Create a Dockerfile: S2/D-3/Dockerfile  
+
+Build the image from this docker file using command:  
+```
+docker build -t img_expose .
+```  
+
+Run the container:  
+```
+docker run -itd --rm img_expose --name cont_expose -p 8080:80
+```  
 
 
 
