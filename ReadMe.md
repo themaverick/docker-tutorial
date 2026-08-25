@@ -104,7 +104,21 @@ Run the container:
 docker run -itd --rm img_expose --name cont_expose -p 8080:80
 ```  
 
+### Tutorial 4
 
+Create a Dockerfile: S2/D-4/Dockerfile  
+
+Build the Apache image from this docker file using command:  
+```
+docker build -t img_apache .
+```  
+
+Run the container:  
+```
+docker run -itd --name cont_apache -p 8080:80 img_apache
+```  
+
+This container runs an Apache web server on port 80 and exposes it on the host machine through port 8080.
 
 
 
