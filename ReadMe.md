@@ -62,12 +62,34 @@ EXPOSE
 
 ## Dockerfile tutorial
 
+### Tutorial 1
+
 Create a Dockerfile: S2/D-1/Dockerfile  
 
 Build the image from this docker file using command:  
 ```
-docker build -r img_from .
+docker build -t img_from .
 ```
+
+### Tutorial 2
+
+Create a Dockerfile: S2/D-2/Dockerfile  
+
+Build the image from this docker file using command:  
+```
+docker build -t img_run-env .
+```  
+
+Run the container:  
+```
+docker run -itd img_from-env --name cont_run-env
+```  
+
+Bring the cotainer forward:
+```
+docker exec -it cont_run-env bash
+```
+
 
 
 
